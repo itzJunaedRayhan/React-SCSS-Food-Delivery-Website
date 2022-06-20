@@ -1,7 +1,7 @@
 .cta-section {
     background: #FEF5F5;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
 
     .cta-wrapper {
         max-width: 1200px;
@@ -40,6 +40,9 @@
                     img {
                         width: 40px;
                         height: 40px;
+                    }
+                    :nth-child(2) {
+                        margin-right: 0px;
                     }
                 }
             }
