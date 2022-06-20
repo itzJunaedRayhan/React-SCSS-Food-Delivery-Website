@@ -161,6 +161,54 @@
             }
         }
     }
+
+    .footer-section {
+        .footer-wrapper {
+            grid-template-columns: 1fr;
+
+            .footer-left {
+                img {
+                    width: 70%;                   
+                    max-width: 154px;
+                }
+
+                ul {
+                    li {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 26px;
+                    max-width: 230px;
+                }
+            }
+            .footer-right {
+                ul {
+                    li {
+                        margin: 9px 0px;
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                p {
+                    padding-left: 20px;
+                    font-size: 14px;
+                    line-height: 26px;
+                    text-align: right;
+                }
+
+                .last-title {
+                    text-align: right;
+                }
+            }
+        }
+    }
 }
 
 /* For Small devices */
@@ -257,6 +305,50 @@
             }
         }
     }
+
+    .footer-section {
+        .footer-wrapper {
+            .footer-left {
+                justify-content: space-between;
+                ul {
+                    margin: 0 auto;
+                    li {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    max-width: 270px;
+                }
+            }
+            .footer-right {
+                justify-content: space-between;
+                ul {
+                    li {
+                        margin: 14px 0px;
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    text-align: left;
+                    padding-left: 0px;
+                }
+
+                .last-title {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 /*  For Medium Device   */
@@ -287,6 +379,10 @@
         }
 
         .mobile-navigation {
+            display: none;
+        }
+
+        .mobile-menu-items {
             display: none;
         }
     }
@@ -362,6 +458,17 @@
                         }
                     }
                 } 
+            }
+        }
+    }
+
+    .footer-section {
+        .footer-wrapper {
+            grid-template-columns: 1fr 1fr;
+            .footer-right {
+                ul {
+                    margin-left: 20px;
+                }
             }
         }
     }

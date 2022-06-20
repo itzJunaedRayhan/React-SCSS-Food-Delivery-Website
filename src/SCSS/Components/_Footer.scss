@@ -1,0 +1,100 @@
+.footer-section {
+    width: 100%;
+    min-height: 300px;
+    background: var(--white-color);
+
+    .footer-wrapper {
+        max-width: 1200px;
+        height: inherit;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: flex-start;
+        padding: 0px 15px;
+        border: 1px solid green;
+
+        .title {
+            font-size: 18px;
+            color: #2E2E2E;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+
+
+        .footer-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid red;
+
+            p {
+                color: var(--text-color);
+                font-size: 16px;
+                max-width: 270px;
+                margin: 20px 0px;
+                line-height: 30px;
+
+            }
+
+            img {
+                width: auto;
+                max-width: 154px;
+                margin-top: 14px;
+            }
+
+            ul {
+                li {
+                    margin: 14px 0px;
+                    a {
+                        color: var(--text-color);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .footer-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            ul {
+                padding: 0px;
+                li {
+                    margin: 14px 0px;
+                    a {
+                        color: var(--text-color);
+                        font-size: 16px;
+                    }
+                }
+            }
+            
+            p{
+                color: var(--text-color);
+                font-size: 16px;
+                margin: 20px 0px;
+                line-height: 30px;
+                max-width: 200px;
+            }
+        }
+    }
+    .copyright {
+        padding: 0px 20px;
+        p {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-top: 0.5px solid rgba(128, 128, 128, 0.264);
+            font-size: 14px;
+            text-align: center;
+            padding: 25px 20px;
+            a {
+                color: var(--first-color);
+                font-size: 16px;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
