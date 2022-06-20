@@ -1,4 +1,5 @@
 import React from 'react';
+import CTA from './CTA';
 import FeatureOne from './FeatureOne';
 import FeatureTwo from './FeatureTwo';
 import Header from './Header';
@@ -11,6 +12,7 @@ const Home = () => {
             <Services/>
             <FeatureOne/>
             <FeatureTwo/>
+            <CTA/>
         </div>
     );
 };

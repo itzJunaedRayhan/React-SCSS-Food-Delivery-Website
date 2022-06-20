@@ -8,6 +8,7 @@
 
         .mobile-navigation {
             display: flex;
+            z-index: 99999;
         }
     }
 
@@ -81,6 +82,7 @@
 
                     img {
                         width: 14%;
+                        margin: 15px 50px 25px 5px;
                     }
                     h3, p {
                         text-align: right;
@@ -118,6 +120,44 @@
                     width: 150px;
                     height: 50px;
                 }
+            }
+        }
+    }
+
+    .cta-section {
+        .cta-wrapper {
+            grid-template-columns: 1fr;
+            .cta-mobile {
+                max-width: 280px;
+                max-height: 200px;
+                margin: 50px auto;
+            }
+            .cta-content {
+                padding: 10px 15px;
+                margin: 0 auto;
+                h4 {
+                    text-align: center;
+                }
+                h2 {
+                    font-size: 25px;
+                    line-height: 40px;
+                    text-align:center;
+                }
+                p{
+                    margin: 20px 5px 20px 5px;
+                }
+                .button-group {
+                    justify-content: center;
+                    button {
+                        width: 140px;
+                        height: 40px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                } 
             }
         }
     }
@@ -177,6 +217,9 @@
                         text-align: left;
                         padding: 5px 25px;
                     }
+                    img {
+                        margin: 15px 10px 25px 5px;
+                    }
                 }
             }
         }
@@ -195,6 +238,22 @@
                 font-size: 24px !important;
                 line-height: 35px !important;
                 margin: 10px 0px;
+            }
+        }
+    }
+
+    .cta-section {
+        min-height: 60vh;
+        .cta-wrapper {
+            grid-template-columns: 1fr 1fr;
+            .cta-mobile {
+                max-height: 300px;
+            }
+            .cta-content {
+                h2 {
+                    font-size: 22px;
+                    line-height: 35px;
+                } 
             }
         }
     }
@@ -282,6 +341,30 @@
     .featureOne-section, .featureTwo-section  {
         min-height: 65vh;
     }
+
+    .cta-section {
+        .cta-wrapper {
+            .cta-mobile {
+                max-width: 300px;
+                max-height: 400px;
+            }
+            .cta-content {
+                margin: 0 auto;
+                .button-group {
+                    justify-content: center;
+                    button {
+                        width: 200px;
+                        height: 70px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
 }
 
 /* For large devices */
@@ -315,6 +398,7 @@
         .feature-wrapper {
             grid-template-columns: 1fr 1fr;
             margin: 15px auto;
+            padding: 5px 15px;
             grid-gap: 15%;
             img{
                 width: auto;
@@ -331,6 +415,10 @@
                 height: 70px !important;
             }
         }
+    }
+
+    .cta-section {
+        min-height: 70vh;
     }
 }
 
@@ -379,6 +467,31 @@
     .featureOne-section, .featureTwo-section  {
         min-height: 85vh;
     }
+
+    .cta-section {
+        min-height: 80vh;
+        .cta-wrapper {
+            align-items: center;
+            justify-content: center;
+            .cta-mobile {
+                max-width: 300px;
+                max-height: 400px;
+                margin: 12% auto;
+            }
+            .cta-content {
+                justify-content: flex-start;
+                h2 {
+                    @include h2Style(left);
+                }
+                h4 {
+                    @include h4Style(left);
+                }
+                .button-group {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
 }
 
 /*     For Extra-Large-Device     */
@@ -409,6 +522,16 @@
                     }
                 }
             }
+        }
+    }
+
+    .cta-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        .cta-wrapper {
+            height: 100%;
+            align-items: center;
         }
     }
 }

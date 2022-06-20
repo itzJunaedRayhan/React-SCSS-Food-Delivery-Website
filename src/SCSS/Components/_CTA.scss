@@ -1,0 +1,48 @@
+.cta-section {
+    background: #FEF5F5;
+    width: 100%;
+    min-height: 100vh;
+
+    .cta-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+
+        .cta-mobile {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .cta-content {
+            max-width: 500px;
+            h4 {
+                @include h4Style(left);
+            }
+            h2 {
+                @include h2Style(left);
+            }
+            p {
+                margin: 20px 0px;
+                @include pStyle(left);
+            }
+            .button-group {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    @include Button(200px, 15px, transparent, var(--title-color), pointer);
+                    border: 1px solid #EEDCDC;
+                    display: flex;
+                    justify-content: space-evenly;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
