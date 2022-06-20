@@ -3,22 +3,18 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3rem;
-
-    /*========== Colors ==========*/
-    --hue: 4; //  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118
-    --sat: 90%; // Yellow: 98% | Red: 90% | Orange: 85% | Green: 50%
-    --first-color: hsl(var(--hue), var(--sat), 60%);
-    --first-color-light: hsl(var(--hue), var(--sat), 85%);
-    --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
-    --first-color-alt: hsl(var(--hue), var(--sat), 53%);
-    --title-color: hsl(var(--hue), 4%, 15%);
-    --text-color: hsl(var(--hue), 4%, 35%);
-    --text-color-light: hsl(var(--hue), 4%, 65%);
-    --body-color: hsl(var(--hue), 0%, 100%);
-    --container-color: #FFF;
-    --scroll-bar-color: hsl(var(--hue), 4%, 85%);
-    --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+    /*========== Colors ==========*/   
+    --first-color: #F55253;
+    --first-color-light: #FDECEC; 
+    --second-color: #8B8B8B;
+    --third-color: #232323;
+    --h3-color: #F54748;
+    --white-color: #FFFFFF;
+    --title-color: #2E2E2E;
+    --text-color: #676767;
+    --linear-color: linear-gradient(to top,#FF7475,#E22123);
+    --green-color: #03A66B;
+    --list-color: #4D4D4D;
 
 
     /*========== Font and typography ==========*/
@@ -26,7 +22,7 @@
     --biggest-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
+    --normal-font-size: 1.1rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 

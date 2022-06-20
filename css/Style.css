@@ -109,8 +109,26 @@ img {
   height: auto;
 }
 
+.header {
+  width: 700px;
+  margin: 0 auto;
+}
 .header h2 {
   color: var(--first-color);
+  margin-bottom: 100px;
+}
+
+.searchbar {
+  position: relative;
+  width: 300px;
+  height: 65px;
+}
+.searchbar input {
+  width: 100%;
+}
+.searchbar .search-icon {
+  position: absolute;
+  left: 0;
 }
 
 body.dark-theme {

@@ -1,0 +1,39 @@
+.featureOne-section, .featureTwo-section {
+    width: 100%;
+    min-height: 85vh;
+    padding: 0px;
+    text-align: center;
+
+    .feature-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 15%;
+        grid-template-columns: 1fr 1fr;
+        justify-items: flex-start;
+        align-items: center;
+
+        .feature-content {
+            max-width: 440px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            h4 {
+                @include h4Style(left);
+            }
+            h2 {
+                @include h2Style(left);
+            }
+            p {
+                margin: 20px 5px 30px 5px;
+                @include pStyle(left);
+            }
+            button {
+                @include Button(200px, 0px, var(--first-color), var(--white-color), pointer);
+            }
+        }
+    }
+}

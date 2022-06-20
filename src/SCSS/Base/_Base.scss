@@ -40,3 +40,17 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.displayNavigation {
+    top: 13%;
+    transition: all 1s ease-in;
+}
+
+.hideNavigation {
+    top: -130%;
+    transition: all 1s ease-in;
+}
+
+.showBoxShadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
